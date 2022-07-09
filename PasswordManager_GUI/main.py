@@ -26,7 +26,8 @@ def generate_password():
     password_input.insert(0, password)
     pyperclip.copy(password)
 
-    messagebox.showinfo(title="Copied to clipboard!", message="The genereaged password was copied to the clipboard.")
+
+    messagebox.showinfo(title="Copied to clipboard!", message="The generated password was copied to the clipboard.")
 
 
 
