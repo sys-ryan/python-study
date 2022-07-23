@@ -19,6 +19,8 @@ now = dt.datetime.now()
 current_month = now.month
 current_day = now.day
 
+print(f'Current Time: {current_month} / {current_day}')
+
 today_birthday = data[(data.month == current_month) & (data.day == current_day)]
 today_birthday_email_list = today_birthday.email.to_list()
 
@@ -40,6 +42,8 @@ if len(today_birthday_email_list) > 0:
                 to_addrs=email,
                 msg=message
             )
+
+            print('Mail sent.')
 
 
 # 3. If step 2 is true, pick a random letter from letter templates and replace the [NAME] with the person's actual name from birthdays.csv
